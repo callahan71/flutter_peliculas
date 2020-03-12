@@ -12,7 +12,7 @@ class Peliculas {
 
       final pelicula = new Pelicula.fromJsonMap(item);
       items.add( pelicula );
-      
+
     }
 
   }
@@ -60,13 +60,13 @@ class Pelicula {
     voteCount        = json['vote_count'];
     id               = json['id'];
     video            = json['video'];
-    voteAverage      = json['vote_average'] / 1;
+    voteAverage      = json['vote_average'] / 1; //para que se double
     title            = json['title'];
     popularity       = json['popularity'] / 1;
     posterPath       = json['poster_path'];
     originalLanguage = json['original_language'];
     originalTitle    = json['original_title'];
-    genreIds         = json['genre_ids'].cast<int>();
+    genreIds         = json['genre_ids'].cast<int>(); //para que sea int
     backdropPath     = json['backdrop_path'];
     adult            = json['adult'];
     overview         = json['overview'];
