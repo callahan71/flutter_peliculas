@@ -74,4 +74,14 @@ class Pelicula {
 
   }
 
+  getPosterImg() {
+
+    if ( posterPath == null ) {
+      return 'https://f0.pngfuel.com/png/998/203/black-and-white-no-to-camera-logo-png-clip-art.png';
+    } else {
+      return 'https://image.tmdb.org/t/p/w500/$posterPath';
+    }
+    
+  }
+
 }
